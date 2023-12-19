@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color:rgb(255, 253, 253);
+            font-size: 15px;
+            font-family:"Roboto Condensed",sans-serif;;
+            font-weight: 400;
+        }
+
+        header {
+            background-color:#fff;
+            border-bottom: 3px solid rgb(212, 212, 212);
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+
+        nav {
+            display: flex;
+            align-items:normal;
+            /* margin: auto; */
+        
+        }
+
+        nav img {
+            width: 180px;
+            margin-left: 70px;
+            padding: 10px 0px;
+        }
+
+        nav a {
+            color: rgb(8, 8, 8);
+            text-decoration: none;
+            margin-right: 5px;
+            font-size: 14px;
+            line-height: 1px;
+            font-family:"Roboto Condensed",sans-serif;;
+            font-weight: 400;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+            color: rgb(107, 18, 52);
+            font-weight: 600;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 10px;
+        }
+        .container{
+            z-index: 0;
+            padding-top: 0px;
+            display:grid; 
+            margin-left: 100px;
+            /* margin: auto; */
+            width: 900px;
+            grid-template-columns: 230px 230px 230px;
+            grid-template-rows: 240px 240px;
+            grid-column-gap:15px;
+            grid-row-gap:10px;
+        }
+        
+        .img1 {
+            max-width: 230px;
+            height: 142px;
+            /* object-fit: cover; */
+        }
+        button {
+    background-color: #fff;
+    border: none; 
+    cursor: pointer; 
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="https://www.consumersearch.com/wp-content/themes/consumersearch/assets/images/site-logo.svg"  class="im" alt="" width="232px" height="25px">
+              
+            </div>
+            <ul>
+                <li><a href="#">HOME & GARDEN</a></li>
+            <li><a href="#">KITCHEN</a></li>
+            <li><a href="#">FITNESS & SPORTS</a></li>
+            <li><a href="#">TECHNOLOGY</a></li>
+            <li><a href="#">FAMILY & PETS</a></li>
+            <li><a href="#">HEALTH & BEAUTY</a></li>
+            <li> <form action="/search" method="GET">
+                <!-- <input type="text" name="query" placeholder="Search"> -->
+                <button type="submit">
+                    <i class="fas fa-search" style="color: brown; background-color: #fff; border: none;"></i>
+                </button>
+            </form></li>
+            </ul>
+        </nav>
+    </header>
+   <p style="color: rgb(0, 0, 0); font-size: 16px; padding: 0px;margin-top: 110px; margin-left: 100px; font-family: Arial, Helvetica, sans-serif; font-weight: 600;" >MORE FROM CONSUMERSEARCH.COM</p>
+    <div class="container">
+      
+        <div class="gallery-item demo1">
+            <img src="https://www.consumersearch.com/wp-content/uploads/sites/10/2023/03/9f3c5c9cddd68e28c01e7cbd72412a9c.jpg" alt="Image 1" title="1" class="img1">
+           <p style="color: rgb(124, 13, 65); font-weight: 600;font-size:small;">TECHNOLOGY</p>
+            <p>The Most Anticipated Phones of <br>2023</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.consumersearch.com/wp-content/uploads/sites/10/2023/03/iStock-857426328.jpg" alt="Image 2" title="2" class="img1">
+            <p style="color: rgb(124, 13, 65);font-weight: 600; font-size: small;">HOME & GARDEN</p>
+            <p>What You Need to Know About Stern & Foster Mattress Reviews </p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.consumersearch.com/wp-content/uploads/sites/10/2023/03/2b14b0b547dee6909b7328ca3e91d93e.jpg" alt="Image 3" title="3" class="img1">
+            <p style="color: rgb(124, 13, 65);font-weight: 600;font-size: small;">KITCHEN</p>
+            <p>Exploring the Benefits of Shopping at Wholefoods Online</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.consumersearch.com/wp-content/uploads/sites/10/2023/03/8aa70bd4cf1048fd1862ae12373a3051.jpg" alt="Image 4" title="4" class="img1">
+            <p style="color: rgb(124, 13, 65); font-weight: 600;font-size: small;">KITCHEN</p>
+            <p>How to Shop Smartly at Wholefoods Online</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.consumersearch.com/wp-content/uploads/sites/10/2023/03/97d8a205dc414d472fb969438b11b425-2.jpg" alt="Image 5" title="5" class="img1">
+            <p style="color: rgb(124, 13, 65);font-weight: 600;font-size: small;">TECHNOLOGY</p>
+            <p>Discover the Benefits of Shopping at Jumia's Online Store</p>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.consumersearch.com/wp-content/uploads/sites/10/2023/03/b1f5b8d8cd0b0cd910d51d4e8f330ceb.jpg" alt="Image 6" title="6" class="img1">
+            <p style="color: rgb(124, 13, 65); font-weight: 600;font-size: small;">TECHNOLOGY</p>
+            <p>Discover New Deals on the eBay Official Site Every Day</p>
+        </div>
+       
+    </div>
+
+</body>
+</html>
